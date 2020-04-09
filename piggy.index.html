@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PiggyVest | Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div>
+          <div class="logo"><img src="img/pig_logo.png"></div>
+      <div class="sign-up-form">
+         
+    	  <h2>Create a Secure Account</h2>
+   	      <p class="pa">Welcome to the future of savings & investments</p>
+
+   	<form class="form1">
+   		<p>Full Name</p>
+   		<input type="name" class= "input-box" placeholder="Full name">
+   		<p>Email</p>
+   		<input type="email" class= "input-box" placeholder="Email Address">
+   		<p>Phone Number</p>
+   		<input type="phone" class= "input-box" placeholder="phone number">
+   		<p>Password</p>
+        <input type="password" class= "input-box" placeholder="password">
+        <p>Referal Phone or Promo Code(Optional)</p>
+        <input type="promo-code" class= "input-box" placeholder="Referrer Phone or code">
+        <p >How did you hear about us(Optional)</p>
+       <div class="drop-down"><button onclick="show_hide()" type="button" class="click">Click to select</button></div>
+            <div style = " display: none;"id="drop-content" >
+            	<a href="#">facebook</a>
+            	<a href="#">Twitter</a>
+       	        <a href="#">instagram</a>
+             	<a href="#">freind/family/coworker Referal</a>
+       	        <a href="#">Google search</a>
+       	        <a href="#">Google play</a>
+              	<a href="#">Online blog</a>
+             	<a href="#">local</a>
+       	
+       	
+            </div>
+        <button type="button" class="create">create Account</button>
+   		
+   		
+   	</form>
+    
+    </div>
+   
+
+
+   <p class="alreadyh">Already have an account? Log in</p>
+</div>
+<script type="text/javascript">
+	function show_hide(){
+		var click = document.getElementById("drop-content")
+		if(click.style.display ==="none"){
+			click.style.display"block";
+			else{
+				click.style.display = "none";
+			}
+		}
+	}
+</script>
+
+
+</body>
+</html>
